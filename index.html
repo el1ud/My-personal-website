@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>My Personal Website</title>
     </head>
     <body>
@@ -19,7 +20,120 @@
                         <li><a href="#">contact</a></li>
                     </ul>
                 </nav>
+                    <div class="header-text">
+                        <p>Front End Developer</p>
+                        <h1>Hello, I am <span> Eliud</span> from Kenya</h1>
+                    </div>
              </div>
+        </div>
+        <!--nav about-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <!---remmemeber to add an image-->
+                        <img src="" alt="">
+                        <div class="about-col-2">
+                            <h1 class="subs">About</h1>
+                            <p>Hello, I'm Eliud. I am passionate and hardworking front end developer.My journey begins in Moi Forces Academy,
+                                 where i grew a liking to everything to do with computer technology. My journey later took me to Moringa School
+                                 where i was able to develop and sharpen my skills in front end developing. With a keen eye in software developing
+                                 and a love for coding i am able to create long lasting apps. Join me and lets create something <strong>together</strong>   </p>
+                                 <div class="tab-titles">
+                                    <p class="tab-links active-links" onclick="opentab('skills')">skills</p>
+                                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                                    <p class="tab-links " onclick="opentab('education')">education</p>
+                                 </div>
+                                 <div class="tab-content active-tab" id="skills">
+                                    <ol>
+                                       <li>
+                                         <span> HTML,CSS and javascript</span> <br>building blocks to develop structure,style elements and more ...
+                                       </li>
+                                       <li>
+                                         <span>Frameworks and libraries</span> <br> familiar with popular front end frameworks and libraries
+                                       </li>
+                                       <li>
+                                         <span>Responsive design</span> <br>able to create websites that adapt to any screen size
+                                       </li>
+                                    </ol>
+                                 </div>
+                                 <div class="tab-content" id="experience">
+                                    <ol>
+                                       <li>
+                                         <span> 2022 - current year</span> <br>Web app developer
+                                       </li>
+                                       <li>
+                                         <span>2020 - 2022</span> <br> Android and os developer at Unga limited
+                                       </li>
+                                       <li>
+                                         <span>2018 - 2019</span> <br>team leader at WorkPAY
+                                       </li>
+                                    </ol>
+                                 </div>
+                                 <div class="tab-content" id="education">
+                                    <ol>
+                                       <li>
+                                         <span> 2015 - 2018</span> <br>Moringa School
+                                        </li>
+                                       <li>
+                                         <span>2011 -2014</span> <br> Moi Forces Academy.
+                                         </li>
+                                    </ol>
+                                 </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="services">
+           <div class="container">
+            <h1 class="sub-title">My services  </h1>
+            <div class="services-list">
+                <div>
+                    <box-icon name='link-alt'></box-icon>
+                    <h2>Web design</h2>
+                    <p>Able to create using figma and Meet the client standards</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <box-icon name='crop'></box-icon>
+                    <h2>App development</h2>
+                    <p>Able to create app that meet every aspect needed and can launch on app store</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <box-icon type='solid' name='brain'></box-icon>
+                    <h2>UI/UX Design</h2>
+                    <p>Able to create an interactive page that has all the best and latest design</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+           </div>
+        </div>
+        <!--contact section-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left"> 
+                        <h1 class="sub-titles">Contact me</h1>
+                        <p>contact@you.com</p>
+                        <p>Tel 0192837465</p>
+                        <div class="social-icons ">
+                            
+
+                        </div>
+                    </div>
+                    <div class="contact-right"> 
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
