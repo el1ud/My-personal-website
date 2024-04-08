@@ -3,6 +3,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: blanchedalmond;
 }
@@ -135,7 +138,7 @@ nav ul li a:hover::after{
     font-size: 15px;
     font-weight: 300;
     border-radius: 20px;
-    transition: background 0.10s, transfrom 0.5s;
+    transition: background 0.10s, transfrom 0.10s;
 }
 /*  check on this*/
 .services-list div box-icon{
@@ -160,7 +163,16 @@ nav ul li a:hover::after{
     background: blue;
     transform: translate(-10px);
 }
-
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    font-style: italic;
+    margin-top: 10px;
+}
 
 
  
