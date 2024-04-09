@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="javascript.js">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>My Personal Website</title>
     </head>
@@ -14,10 +15,10 @@
                 <nav>
                     <img src="https://dynamic.design.com/preview/logodraft/e57d4f0b-487e-42fd-b5d3-19a27885cbbc/image/large.png" alt="logo" class="logo">
                     <ul>
-                        <li> <a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li> <a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                     <div class="header-text">
@@ -32,20 +33,20 @@
                 <div class="row">
                     <div class="about-col-1">
                         <!---remmemeber to add an image-->
-                        <img src="" alt="">
+                        <img src="https://media.istockphoto.com/id/1669453534/photo/3d-render-cloud-computing-circuit-board-background.webp?b=1&s=170667a&w=0&k=20&c=6HOp923EltMS7cGKWbf5MsWVTt4osvs8kNqo5MZkMEg=" alt="">
                         <div class="about-col-2">
-                            <h1 class="subs">About</h1>
-                            <p>Hello, I'm Eliud. I am passionate and hardworking front end developer.My journey begins in Moi Forces Academy,
+                            <h1 class="subs">About me</h1>
+                            <p>Hello, I'm  <strong>Eliud.</strong> I am passionate and hardworking front end developer.My journey begins in Moi Forces Academy,
                                  where i grew a liking to everything to do with computer technology. My journey later took me to Moringa School
                                  where i was able to develop and sharpen my skills in front end developing. With a keen eye in software developing
-                                 and a love for coding i am able to create long lasting apps. Join me and lets create something <strong>together</strong>   </p>
-                                 <div class="tab-titles">
+                                 and a love for coding i am able to create long lasting apps. Join me and lets create something together   </p>
+                                 <div class="tab">
                                     <p class="tab-links active-links" onclick="opentab('skills')">skills</p>
-                                    <p class="tab-links" onclick="opentab('experience')">experience</p>
-                                    <p class="tab-links " onclick="opentab('education')">education</p>
+                                    <button class ="tab-links" onclick="opentab(event, 'tab1')">Tab 1</button>
+                                    <button class="tab-links " onclick="opentab(event, 'tab2' )">Tab 2</button>
                                  </div>
-                                 <div class="tab-content active-tab" id="skills">
-                                    <ol>
+                                 <div class="tab-content active-tab" id="tab1">
+                                    <ul>
                                        <li>
                                          <span> HTML,CSS and javascript</span> <br>building blocks to develop structure,style elements and more ...
                                        </li>
@@ -55,9 +56,9 @@
                                        <li>
                                          <span>Responsive design</span> <br>able to create websites that adapt to any screen size
                                        </li>
-                                    </ol>
+                                    </ul>
                                  </div>
-                                 <div class="tab-content" id="experience">
+                                 <div class="tab-content" id="tab2">
                                     <ol>
                                        <li>
                                          <span> 2022 - current year</span> <br>Web app developer
@@ -149,7 +150,7 @@
 
 
 
-        <script src="script.js"></script>
+        <script src="script.js" type="scripttype"></script>
     </body>
 
 

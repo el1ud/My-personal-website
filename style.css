@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: blanchedalmond;
+    background: darkkhaki;
 }
 .container{
     padding: 10px 10px;
@@ -60,22 +60,21 @@ nav ul li a:hover::after{
 /*----part two--*/
 #about{
     padding: 85px 0;
-    color: black;
 }
 .row{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 40%;
+    float: left;
 }
 .about-col-1 img{
      width: 100%;
      border-radius: 20px;  
 }
 .about-col-2{
-    flex-basis: 60%;
+    float: right;
 }
 .subs{
     font-size: 64px;
@@ -87,14 +86,14 @@ nav ul li a:hover::after{
    display: flex;
    margin: 20px 0 40px;
 }
-.links{
+.tab-links{
     margin-right: 50px;
     font-weight:500 ;
     cursor: pointer;
     font-size: 19px;
     position: relative;
 }
-.links::after{
+.tab-links::after{
     content: '';
     height: 5px;
     width: 0;
@@ -103,16 +102,17 @@ nav ul li a:hover::after{
     bottom: 10px;
     transition: 0.8s;
     background: whitesmoke;
+    transition: 0.10s;
 
 }
-.links.active-links::after{
+.tab-links.active-links::after{
     width: 75%;
 }
-.tab-content ol li{
+.tab-content ul li{
     list-style: none;
     margin: 10px 0;
 }
-.tab-content ol li span{
+.tab-content ul li span{
     font-size: 15px;
     color: chocolate;
 }
@@ -141,7 +141,7 @@ nav ul li a:hover::after{
     transition: background 0.10s, transfrom 0.10s;
 }
 /*  check on this*/
-.services-list div box-icon{
+.services-list div {
     font-size: 50px;
     margin-bottom: 35px;
      
@@ -156,7 +156,7 @@ nav ul li a:hover::after{
     font-size: 25px;
     margin-top: 20px;
     display: inline-block;
-    color: chartreuse;
+    color: red;
 
 }
 .services-list div:hover{
@@ -164,10 +164,13 @@ nav ul li a:hover::after{
     transform: translate(-10px);
 }
 .contact-left{
-    flex-basis: 35%;
+    flex: 1 0 35%;
+    display: inline-block;
 }
 .contact-right{
-    flex-basis: 60%;
+    flex: 1 0 60%;
+    display: inline;
+    padding-left: 500px;
 }
 .contact-left p{
     font-style: italic;

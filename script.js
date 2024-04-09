@@ -1,13 +1,20 @@
-let links= document.getElementsByClassName("links");
-let tabContent = document.getElementsByClassName("tab-content");
-function openTab(tabname){
-    for(links of links){
-        links.classlist.remove("active-link");
-    }
-    for (tabContent of tabContent){
-        tabContent.classlist.remove("active-tab")
-    }
-    event.currentTarget.classlist.add("active-link");
-    document.getElementById(tabname).classlist.add("active-tab")
+const tabLinks= Array.from (document.getElementsByClassName("tab-links"));
+const tabcontent = Array.from(document.getElementsByClassName("tab-content"));
 
-}
+function openTab(event, tabname) {
+    event.preventDefault(); 
+  
+    for (const tabLink of tabLinks) {
+      tabLink.classList.remove("active-link");
+    }
+  
+    for (const tabContent of tabContent) {
+      tabContent.classList.remove("active-tab");
+    }
+  
+    const currentTabLink = event.currentTarget;
+    currentTabLink.classList.add("active-link");
+  
+    const targetTabContent = document.getElementById(tabname);
+    targetTabContent.classList.add("active-tab");
+  }
