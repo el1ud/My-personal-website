@@ -54,7 +54,7 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 .header-text h1 span{
-    color: gold;
+    color: green;
 }
 
 /*----part two--*/
@@ -133,7 +133,7 @@ nav ul li a:hover::after{
     margin-top: 50px;
  }
 .services-list div{
-    background: yellow;
+    background: rosybrown;
     padding: 40px;
     font-size: 15px;
     font-weight: 300;
@@ -165,7 +165,7 @@ nav ul li a:hover::after{
 }
 .contact-left{
     flex: 1 0 35%;
-    display: inline-block;
+    display: flexbox ;
 }
 .contact-right{
     flex: 1 0 60%;
